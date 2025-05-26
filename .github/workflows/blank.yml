@@ -1,15 +1,16 @@
 name: CI
 
-  # Allows you to run this workflow manually from the Actions tab
+on:
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   start-container-and-checkout:
+    runs-on: linux
     container:
       image: busybox
     steps:
       - name: Checkout
-        uses; actions/checkout@v4
+        uses: actions/checkout@v4
     
