@@ -7,7 +7,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   start-container-and-checkout:
-    runs-on: linux
+    runs-on: ubuntu-latest
     container:
       image: busybox
     steps:
